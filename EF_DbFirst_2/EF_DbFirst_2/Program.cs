@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace EF_DbFirst_2
+namespace EF_DBfirst_2
 {
     static class Program
     {

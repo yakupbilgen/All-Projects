@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EF_DbFirst_2.Properties
+namespace EF_DBfirst_2.Properties
 {
 
 
