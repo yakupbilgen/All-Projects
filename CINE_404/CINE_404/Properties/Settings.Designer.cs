@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EF_CF_SMARTPRO.Properties
+namespace CINE_404.Properties
 {
 
 

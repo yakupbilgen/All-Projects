@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EF_CF_SMARTPRO")]
+[assembly: AssemblyTitle("CINE_404")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EF_CF_SMARTPRO")]
+[assembly: AssemblyProduct("CINE_404")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ac53795c-c14b-4158-a787-29a8f5edc1e0")]
+[assembly: Guid("57de0aaa-e208-4828-a543-900abd696970")]
 
 // Version information for an assembly consists of the following four values:
 //

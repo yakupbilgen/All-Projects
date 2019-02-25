@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace EF_CF_SMARTPRO
+namespace CINE_404
 {
     public partial class Form1 : Form
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace EF_CF_SMARTPRO
+namespace CINE_404
 {
     static class Program
     {
