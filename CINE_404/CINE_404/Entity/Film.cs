@@ -11,12 +11,14 @@ namespace CINE_404.Entity
     {
         public int FilmID { get; set; }
 
-        [Key]
-        public int FilmYonetmenID { get; set; }
-
+        [Required]
         public string FilmAd { get; set; }
+        
+        [ForeignKey("FilmYonetmeni")]
+        public int FilmYonetmenID { get; set; }
+        public Yonetmen FilmYonetmeni { get; set; }
+        
 
-        [ForeignKey("OyuncuID")]
         public ICollection<Oyuncu> FilmOyunculari { get; set; }
 
     }

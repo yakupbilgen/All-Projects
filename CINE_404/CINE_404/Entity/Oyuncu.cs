@@ -9,14 +9,14 @@ namespace CINE_404.Entity
 
     public class Oyuncu : DbContext
     {
-        [Key]
+        //[Key]
         public int OyuncuID { get; set; }
         [Required]
         public string OyuncuAdSoyad { get; set; }
 
         public DateTime OyuncuDogumTarihi { get; set; }
 
-        [ForeignKey("FilmID")]
+        //[ForeignKey("FilmID")]
         public ICollection<Film> OynadigiFilmer { get; set; }
 
         //Nesne veya collectionlarý biz belirleyeceðiz!

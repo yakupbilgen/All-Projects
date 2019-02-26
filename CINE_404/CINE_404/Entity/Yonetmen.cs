@@ -14,7 +14,7 @@ namespace CINE_404.Entity
         [Required]
         public string YonetmenAdSoyad { get; set; }
 
-        [ForeignKey("FilmID")]
+        //[ForeignKey("FilmID")]
         public ICollection<Film> YonettigiFilmler { get; set; }
 
         //Nesne veya collectionlarý biz belirleyeceðiz!
