@@ -1,0 +1,14 @@
+﻿body
+{
+}
+div.ContainerDiv
+{
+    border:10px solid red;
+    border-color:red;
+    background-color:black;
+    text-align:center;
+    width:99%;
+    height:720px;
+    overflow:auto;
+    float:left;
+}

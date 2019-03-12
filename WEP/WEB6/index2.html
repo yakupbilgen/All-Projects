@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- External Javascript Kullanımı -->
+    <script src="Script.js" charset="utf-8"></script>
+
+<style>
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    height: auto;
+    /* border: 10px solid red; */
+    text-align: center;
+    text-color:red
+    background-color: black;
+}
+.kutu
+{
+    /* border: 2px solid blue; */
+    background-color:greenyellow;
+}
+
+.container2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.article
+{
+    column-gap: 5px;
+    row-gap: 5px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+</style>
+
+</head>
+<body>
+    <section class="container">
+        <section class="kutu" id="kutu1"><br>
+            <button onclick="topla()">TOPLA</button>
+        </section>
+        <section class="kutu" id="kutu2">
+            <p id="kelime">id si kelime olan paragraf</p>
+            <button onmouseover="idkelime()">KULLAN</button>
+        </section>
+        <section class="kutu" id="kutu3"><br>
+            <button onclick="stildegistir()">Stil Değiştir</button><br><br>
+            <button onclick="kenarekle()">Kenar Ekle</button>
+        </section>
+    </section>
+    <br>
+    <br>
+    <br>
+
+
+    <section class="container2">
+        <section id="kutu2-1">
+            <article class="article">
+                <p class="container2koyu" id="article">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</p>
+            <button onclick="arkaplanrengidegistir()">Değiştirrrrrr</button>
+            </article>
+        </section>
+    </section>
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+        <p>8 MART</p>
+    <br>
+    <br>
+    <br>
+
+    <section class="container">
+        <section class="kutu">
+            <p class="konu">Stil değişikliği</p>
+            <br />
+            <button onclick="this.style.display='none'"></button>
+        </section>
+    </section>
+
+
+
+</body>
+</html>    

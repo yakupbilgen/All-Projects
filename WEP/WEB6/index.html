@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- External Javascript Kullanımı -->
+    <script src="Script.js"></script>
+    <style>
+        .container {
+            display:grid;
+            background-color:darkgrey;
+            /* 
+               Paydalı Dilimleme İşlemi
+               Örnek: 4 tane kullandığımız için her bir kolon 1/4 kesir oranında olacak. 
+            */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height:auto;
+            column-gap:5px;
+            row-gap:5px;
+        }
+        .kutu{
+            background-color:cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <section class="kutu">
+            <p id ="merhaba">MERHABA DÜNYA</p>
+            <button onclick="merhabaMesaj()" onmousewheel="tekerlek()" onmouseover="mouseuzerinde()">TIKLA</button>
+            <input type="button" onclick="merhabaMesaj()" value="INPUT BUTON"/>
+        </section>
+
+         <section class="kutu">
+            <p id ="dunya">Kutuların Arka Plan Rengini Değiştir.</p>
+            <button onclick="renklendir()">RENKLENDİR</button>
+        </section>
+        <section class="kutu" id="kutu3">
+            <p id ="dunya">Kutuların Arka Plan Rengini ID ile Değiştir.</p>
+            <button onclick="renklendirIDile()">KUTU 3'ü RENKLENDİR</button>
+        </section>
+
+
+     </section>
+
+ </body>
+</html

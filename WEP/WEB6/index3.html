@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- External Javascript Kullanımı -->
+    
+    <style>
+        .container
+        {
+            border:2px solid #00ba18;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap:5px;
+            row-gap:5px;
+            padding:15px;
+            border-radius:3px;
+        }
+            .kutu
+            {
+                background-color:#f4f688;
+                padding-right:15px;
+                padding-left:15px;
+                padding-bottom:5px;
+                text-align:center;
+                border-radius:6px;
+                border: 1px #007d7d solid;
+            }
+            .konu
+            {
+                font-size:18px;
+                display:block;
+                border:ridge 2px #ff8f00;
+                border-radius:6px;
+                padding: 5px;
+            }
+            button
+            {
+                width:200px;
+                height:80px;
+                font-size:20px;
+                color:red;
+            } 
+        .container2
+        {
+            border:2px solid #00ba18;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap:5px;
+            row-gap:5px;
+            padding:15px;
+            border-radius:3px;
+        }
+        </style>
+
+</head>
+<body>
+        <h1><p>8 MART</p></h1>
+    <br>
+    <br>
+    <br>
+
+    <section class="container">
+        <section class="kutu">
+            <p class="konu">Stil Değişikliği</p>
+            <br />
+            <button onclick="this.style.display='none'">
+                Butonu Silmek için Tıkla!
+            </button>
+        </section>
+
+
+
+        <section class="kutu">
+            <p class="konu">JavaScript OOP</p>
+            <br />
+            <form>
+                <label>Öğrenci Adı:</label>
+                <input id="input_ogrenciAdi" type="text" />
+                <br />
+                <label>Öğrenci S.Ad:</label>
+                <input id="input_ogrenciSoyadi" type="text" />
+                    
+                <label>Öğrenci No:</label>
+                <input id="input_ogrenciNo" type="text" />
+                    
+                <button onclick="ogrenciKaydet()">Öğrenci Kaydet</button>
+            </form>
+        </section>
+
+
+
+        <section class="kutu">
+            <p class="konu">FOR IN</p>
+            <br />
+            <p id="classListe" class="test1 test2 test3">O Classlar Buraya Gelecek!</p>
+            <button onclick="classListele()">Sınıf Listele</button>
+        </section>
+    
+
+
+        <section class="kutu">
+            <p class="konu">While Döngüsü</p>
+            <br />
+            <p>Doğum Yılı: <span id="dogumYili">1888</span></p>
+            <button onclick="dogumYiliKontrol()">Doğum Yılı Kontrol</button>
+        </section>
+        
+
+
+        <section class="Kutu">
+            <p class="konu">Object</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+        <section class="container2">
+
+
+            <section class="kutu">
+                <p class="konu">Sayı Giriniz:<input type="text" class="GirilenSayi" id="GirilenSayi"></p>
+                <button onclick="mod3()">mod3</button>
+                <p class="BolunenSayiler konu" id="BolunenSayiler"></p>
+            </section>
+
+            <section id="renklikutu" class="kutu">
+                <input id="inputcolor" type="color" onchange="renk()" />
+                <br>
+                <br>
+                <p id="renklikutuyazisi" class="konu">asd</p>
+            </section>
+
+        </section>
+
+
+
+
+
+    </section>
+
+    <script src="Script3.js" charset="utf-8"></script>
+
+</body>
+</html>    

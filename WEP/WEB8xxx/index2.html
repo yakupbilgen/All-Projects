@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Konu pekiştirme örnekleri</title>
+    <script src="js\jquery.min.js"></script>    
+    <script>
+        $(document).ready(function(){
+            $("#btnKaydet").click(function(){
+                $("#hh2").remove();
+                $("#kutusag").css({"background-color":$(".inputcolor").val(),"font-size":$(".size").val()+"px"})
+                var txt=$("#yazi").val();
+                $("#kutusag article").before("<h2 id='hh2'>"+txt+"<\h2>");
+
+            });
+            
+        });
+    </script>
+
+    <style>
+        .container {
+            border: 2px solid #2f00ff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        .kutu {
+            background-color: sienna;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color:red;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+        }
+        .kutusag{
+            background-color: bisque;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color:red;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+        }
+        .konu {
+            font-size: 18px;
+            display: block;
+            border: ridge 2px #ff8f00;
+            border-radius: 6px;
+            padding: 5px;
+            background-color: red;
+            color:black;
+        }
+        button {
+            width: 200px;
+            height: 80px;
+            font-size: 20px;
+        }
+        #btnKaydet{
+            float:right;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="kutu">
+            <input class="inputcolor" type="color"/>
+            <input class="size" type="text" placeholder="Font büyüklüğü">
+            <input id="yazi" class="yazi" type="text" placeholder="Yazı girin">
+            <button id="btnKaydet">Kaydet</button>
+        </section>
+        <section id="kutusag" class="kutusag">
+            <article id="article1">asdas</article>
+        </section>
+    </main>
+</body>
+</html>

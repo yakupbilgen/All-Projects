@@ -1,0 +1,67 @@
+﻿body
+{
+}
+div.UstAnaDiv {
+    border: 5px solid blue;
+    /*margin: 5px;*/
+    background: red;
+    /*padding:5px;*/
+    float: left;
+    width: 100%;
+    height: auto;
+}
+div#UstDivOrta1
+{
+    width:100%;
+    height:350px;
+
+}
+div#UstDivOrta2 {
+    width: 100%;
+    height: 240px;
+
+}
+div#UstDivYan1 {
+    float: left;
+    width: 24%;
+    height: 200px;
+
+}
+div#UstDivYan2 {
+    float: right;
+    width: 24%;
+    height: 200px;
+
+}
+div#UstDivYan3 {
+    float: left;
+    width: 24%;
+    height: 200px;
+
+}
+div#UstDivYan4 {
+    float: right;
+    width: 24%;
+    height: 200px;
+
+}
+
+
+
+div.AltAnaDiv {
+    border: 5px solid;
+    /*margin: 5px;*/
+    background: black;
+    /*padding: 5px;*/
+    float: left;
+    width: 100%;
+    height: auto;
+}
+div#AltOrtaDiv 
+{
+
+    width: 100%;
+    height: 400px;
+    background:gray;
+}
+

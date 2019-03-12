@@ -1,0 +1,144 @@
+﻿<!--<!DOCTYPE html>-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script>
+        $(document).ready(function () {
+            //jBtn1 click()
+            $("#jBtn1").click(function(){ 
+                // $("section#jQueryTest1").hide();             //section da id ye göre gizlemek
+                // $("p.jTest1").hide();                        //p etiketinde class sine göre gizlemek
+
+                $("section#jQueryTest1,p.jTest1").hide();       //Aynı anda birden çok elementi gizlemek.
+
+                $("p").hide();                                  //Tüm p elementlerini gizler. İD CLASS ne olursa olsun.
+            })
+
+            //kutu2btn Click()
+            $("#kutu2btn").click(function () {
+                var degisken1 = $("#article1").text();
+                alert(degisken1);
+            })
+
+            $("#kutu2btn2").click(function () {
+                var degisken2 = $("#article1").html();
+                alert(degisken2);
+            })
+
+            $("#kutu2btn3").click(function () {
+                var degisken3 = $("#kutu2ad").val();
+                alert(degisken3);
+            })
+
+
+
+
+            $("#btn1").click(function(){
+                var txt=$("#txtYazi").val();
+                document.getElementById("txtKutu").innerHTML=txt;
+            })
+
+
+            $("#btn2").click(function(){
+                alert($("#link").attr("href"));
+             })
+        })
+    </script>
+
+    <style>
+        .container {
+            border: 2px solid #00ba18;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        .kutu {
+            background-color: #f2f3ca;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+        }
+        .konu {
+            font-size: 18px;
+            display: block;
+            border: ridge 2px #ff8f00;
+            border-radius: 6px;
+            padding: 5px;
+        }
+        button {
+            width: 200px;
+            height: 80px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <section class="kutu">
+            <section id="jQueryTest1">
+                <p>
+                    Merhaba 726
+                </p>
+            </section>
+            <span class="jTest1">Span jTest1</span>
+            <section>
+                <p class="jTest1">
+                    Merhaba 726 jTest1
+                </p>
+                <p class="jTest2">
+                    HTML'in en önemli etiketlerinden 
+                    birisi de &ltp&gt etiketidir. 
+                    <!-- < ve > işaretleri için &lt ve &gt  -->
+                </p>
+                <p class="jTest1">
+                    Merhaba 726 jTest1
+                </p>
+            </section>
+            <section id="jQueryButon">
+                <button type="button" id="jBtn1">GİZLE</button>
+            </section>
+
+
+        </section>
+        <section class="kutu">
+            <article id="article1">
+                Makale 1 : <b>Güzel</b> Bahar mevsiminin getirdikleri
+            </article>
+            <input id="kutu2Ad" value="Süleyman Beytullah Avşar" />
+            <button id="kutu2btn">Text Verisini Oku</button>
+            <button id="kutu2btn2">Html Verisini Oku</button>
+            <button id="kutu2btn3">Val Verisini Oku</button>d
+        </section>
+    </main>
+
+    <main class="container">
+        <section class="kutu">
+            <input id="txtYazi" type="text" value="Text içerisindeki yazı" title="ATTR">
+            <section id="txtKutu" class="kutu">asd</section>
+            <button id="btn1">Button</button>
+        </section>
+        <section class="kutu">
+            <p><a href="https://www.w3schools.com" id="link">W3Schools.com</a></p>
+            <section id="hrefKutu" class="kutu"></section>
+            <button id="btn2">Button</button>
+        </section>
+    </main>
+
+    <main class="container">
+
+    </main>
+
+
+
+</body>
+</html>
