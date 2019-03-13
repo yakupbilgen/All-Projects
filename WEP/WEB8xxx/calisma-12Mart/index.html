@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .container2 {
+            border: 2px solid blue;
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        .container {
+            border: 2px solid #2f00ff;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        .kutu {
+            background-color: black;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color:red;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+        }
+        .kutusag
+        {
+            
+            background-color: black;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color:red;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+            width: 65%;
+            height: auto;
+        }
+        .kutusol{
+            background-color: black;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color:red;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+            width: 20%;
+            border: 3px solid white;
+        }
+        .kutusol1{
+            width: auto;
+            height: auto;
+            margin:1px;
+        }
+        .kutusol2{
+            width: auto;
+            border: 1px solid;
+            margin:1px;
+            border: 3px solid white;
+
+        }
+
+        .konu {
+            font-size: 18px;
+            display: block;
+            border: ridge 2px #ff8f00;
+            border-radius: 6px;
+            padding: 5px;
+            background-color: red;
+            color:black;
+            text-align: center;
+        }
+        button {
+            width: 200px;
+            height: 80px;
+            font-size: 20px;
+        }
+        #btnKaydet{
+            float:right;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color:black;
+        }
+        img{
+            border-radius: 20px;
+            width: 100%;
+            height: 200px;;
+        }
+        ul.header{
+            border-style: double;
+            text-align: right;
+            border: 1px;
+            margin: 1px;
+        }
+        ul#header_ul li{
+            float: left;
+            list-style: none;
+            margin: 1rem;
+            color:red;
+        }
+        input{
+            margin: 1rem;
+            float: right;
+            text-align: center;
+        }
+        ul.ulsol{
+            float: left;
+            text-align: left;
+        }
+        h3.h3yazilim{
+            text-align: left;
+        }
+        
+
+    </style>
+
+  </head>
+  <body>
+    <main class="container">
+        <div class="kutu">
+            <img class="img-responsive img-rounded" src="IMG\banner.png">
+        </div>
+
+
+
+        <div class="col-md-12 float-left bg-white">
+            <nav>
+                <ul id="header_ul">
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">İletişim</a></li>
+                    <i class="glyphicon glyphicon-search"></i><input type="text" placeholder="Search">
+                </ul>
+            </nav>
+        </div>
+
+    <div class="col-md-2 float-left">
+        <div class="kutusol1">
+            <ul class="ulsol">
+                <h3 class="h3yazilim">Yazılım</h3>
+                <li><a href="#">Robotik</a></li>
+                <li><a href="#">Proje Yönetimi</a></li>
+                <li><a href="#">Yazılım</a></li>
+            </ul>
+        </div>
+
+        <div class="kutusol1">
+            <ul class="ulsol">
+                <h5 class="h3yazilim">Güncel Makaleler</h3>
+                <li><a href="#">Yeni Makale 1</a></li>
+                <li><a href="#">Yeni Makale 2</a></li>
+                <li><a href="#">Yeni Makale 3</a></li>
+                <li><a href="#">Yeni Makale 4</a></li>
+                <li><a href="#">Yeni Makale 5</a></li>
+                <li><a href="#">Yeni Makale 6</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-10 float-left bg-success">
+        <div class="col-md-12">
+            <div class="col-md-4 float-left">
+                <img class="img-responsive img-rounded" src="IMG\1.png">
+                <article class="konu"><h4>Başlık</h4></article> <br>
+                <article class="konu"><h4>Yazar Adı</h4></article> <br>
+                <article class="konu"><h4>Tarih</h4></article>
+            </div>
+            <div class="col-md-8 float-right">
+                <article class="konu" style=" height:500px;">
+                    <article>Lorem Ipsum Nedir?<br>
+                        <span class="text-left">
+                            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının 
+                            bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı 
+                            sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden 
+                            elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile 
+                            ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+                        </span>
+                        <br><br>
+                        <span class="m-3 b-3">
+                            <a>#Etiket-1</a>
+                            <a>#Etiket-2</a>
+                            <a>#Etiket-3</a>
+                            <a>#Etiket-4</a>
+                            <a>#Etiket-5</a>
+                            <a>#Etiket-6</a>
+                            <a>#Etiket-7</a>
+                            <a>#Etiket-8</a>
+                            <a>#Etiket-9</a>
+                            <a>#Etiket-10</a>
+                            <a>#Etiket-11</a>
+                            <a>#Etiket-12</a>
+                            <a>#Etiket-13</a>
+                            <a>#Etiket-14</a>
+                            <a>#Etiket-15</a>
+
+                        </span>
+                    </article>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center bg-dark py-3"><br>© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js\jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js\popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js\bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
