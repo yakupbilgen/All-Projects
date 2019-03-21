@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        .header {
+            grid-area:ustbaslik;
+            height:100px;
+        }
+        .menu{
+            grid-area:ustmenu;
+        }
+        .icerik{
+            grid-area:konu;
+            height:450px;
+        }
+        .footer{
+            grid-area:altbilgi;
+        }
+        .container{
+            width:900px;
+            margin:auto;
+            display:grid;
+            grid-template-areas: 'ustbaslik ustbaslik ustbaslik ustbaslik ustbaslik ustbaslik' 
+                'ustmenu ustmenu ustmenu ustmenu ustmenu ustmenu' 
+                'konu konu konu konu konu konu' 
+                'altbilgi altbilgi altbilgi altbilgi altbilgi altbilgi';
+            /*grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;*/
+            grid-gap: 10px;
+            background-color: #808080;
+            padding: 10px;
+        }
+        .container>div{
+            border:10px solid #0e481f;
+            background-color: #2196F3;
+            text-align: center;
+            /*padding: 20px 0;*/
+            font-size: 14px;
+            font-family: cursive;
+        }
+
+        #headerfoto{
+            width:100%;
+            height:100px;
+        }
+
+        nav{
+            /*height:55px;*/
+        }
+
+        ul{
+            list-style-type:none;
+            /*Madde işaretleri kaldırıldı.*/
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            /*float left den dolayı oluşan taşmanın kapsanması sağlandı.*/
+            background-color:#ff6a00;
+        }
+        li{
+            float:left;
+            /*Madde işaretleri yanyana getirildi.*/
+        }
+        li a{
+            display:block;
+            color:white;
+            text-align:center;
+            padding:10px 25px;
+            /*Menüler arasındaki alt üst arasındaki boşluklar ayarlandı.*/
+            text-decoration:none;
+            /*Madde linklerinin altındaki alt çizgi kaldırıldı.*/
+        }
+        li a:hover:not(.active){
+            background-color:#111;
+        }
+        .active{
+            background-color:white;
+        }
+        #blogid{
+            color:red;
+        }
+
+        li input{
+            float:right;
+            display:block;
+            color:white;
+            text-align:center;
+            vertical-align:central;
+            padding:10px 25px;
+        }
+        input{
+            float:right;
+                height: 39px;
+            font-size: 15px;
+            padding:unset;
+        }
+
+        #solmenu{
+            width:30%;
+            float:left;
+
+        }
+        #solmenu li{
+            float:unset;
+
+        }
+        #detaylar{
+            float:left;
+            height:450px;
+            width:70%;
+            background-color:#a84803;
+            overflow:hidden;
+        }
+        #makalebilgi{
+            float:left;
+            width:30%;
+            height:400px;
+            background-color:maroon;
+        }
+        #makaleicerik{
+            float:left;
+            width:70%;
+            height:400px;
+            background-color:palevioletred;
+        }
+
+        #makaleozet{
+            height:250px;
+            background-color:mistyrose;
+        }
+        #yazietiket{
+            height:150px;
+            background-color:slateblue;
+        }
+
+        #makalefoto{
+            border-radius:10px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media only screen and (max-width:900px) 
+        {
+            #headerfoto{
+                max-width: unset;
+                float: left;
+                display: block;
+                text-align: center;
+            }
+            .icerik{
+                height:800px;
+                float: left; 
+                max-width: unset;
+                text-align:center;
+            }
+
+            .container{
+                width:550px;
+            }
+            
+            #makalebilgi{
+                width:100%;
+            }
+            #makaleicerik{
+                width:100%
+            }
+        }
+
+        @media only screen and (max-width:550px) 
+        {
+            nav{
+                height:unset;
+            }
+            li{
+                float:unset;
+            }
+
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img src="IMG/header.jpg" id="headerfoto" />
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                <li><a href="#anasayfa">ANASAYFA</a></li>
+                <li><a href="#hakkinda">HAKKINDA</a></li>
+                <li><a href="#iletisim">İLETİŞİM</a></li>
+                <li><a class="active" href="#blog" id="blogid"><b>BLOG</b></a></li>
+                <input type="search" placeholder="Aranacak Kelimeyi Gir"/>
+                </ul>  
+            </nav>    
+        </div>
+
+        <div class="icerik">
+            <div id="solmenu">
+                <nav>
+                    <ul>
+                        <li><a href="#kategoriler" style="color:purple"><b>KATEGORİLER</b></a></li>
+                        <li><a href="#yazilim">Yazılım</a></li>
+                        <li><a href="#robotik">Robotik</a></li>
+                        <li><a href="#projeyonetimi">Proje Yönetimi</a></li>
+                        <li><a href="#otomasyon">Otomasyon</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#kategoriler" style="color:purple"><b>GÜNCEL MAKALELER</b></a></li>
+                        <li><a href="#yazi1">Yazı Başlık 1</a></li>
+                        <li><a href="#yazi2">Yazı Başlık 2</a></li>
+                        <li><a href="#yazi3">Yazı Başlık 3</a></li>
+                        <li><a href="#yazi4">Yazı Başlık 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="detaylar">
+                <div id="makalebilgi">
+                        <br /><br /><br /><br />
+                    <img src="IMG/header.jpg" id="makalefoto" style="width:90%; height:auto;"/>
+                    <h3>Başlık</h3>
+                    <h3>Yazar Adı</h3>
+                    <h3>Tarih</h3>
+
+                </div>
+                <div id="makaleicerik">
+                    <div id="makaleozet">
+                        <br />
+                        <article><b>
+                            <h4>Makale Özeti: </h4>
+                            Adamın biri varmış. Odfgojgoıophprkg ıojdjojhjhp jp jh ıoopwküopa oorjegıojdhjoehojgpco oertgojdfogjdosodjgoıd ıorjgoıdjgıojsaüpjfo orogjdsıopgjaüpjefo üjrgüajgüojhhüaepıjü prjgüpjthıotıoqjıv jütowtırıwııerüaj üptjqüprjypüsagjiüwerj wüpıtjüpwjyüp gıwetjü ıqerypüejtıa jwüpyj üwerıjüpdj w jüpwjyıwjeıgodfgweıor ywjıo jsgjnsdog
+                        </b></article>
+                    </div>
+                    <div id="yazietiket">
+                        <br />
+                        <h4>Yazı Etiketleri:</h4>
+                        <h4>Yazı, Etiket, Plaket, Aduket, Nezaket, Buket, Laminant, Medefe, Sunta, Rölöve</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"><h4>DESIGNED BY UFUK</h4></div>
+
+    </div>
+
+</body>
+</html>

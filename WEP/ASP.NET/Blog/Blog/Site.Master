@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Blog.SiteMaster" %>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\css.css" />
+
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form runat="server">
+    
+<main class="container">
+        <div class="kutu">
+            <img class="img img-responsive img-rounded img-fluid img-thumbnail" src="IMG\banner.png">
+        </div>
+<header id="header_ust">
+    <div class="col-md-12 float-left">
+        <nav class="navbar navbar-expand-lg navbar-success bg-dark">
+            <a class="navbar-brand" href="Default.aspx">Anasayfa</a>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.aspx">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Iletisim.aspx">İletişim</a>
+                    </li>  
+                </ul>
+                <asp:LinkButton ID="LinkButton2" runat="server"><a  class="nav-link float-right" href="UserReg.aspx">Üye Ol</a></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" ><a class="nav-link float-right" href="UserLogin.aspx">Üye Girişi</a></asp:LinkButton>
+                <input class="form-control mr-sm-2 float-right" type="search" placeholder="Search" aria-label="Search">
+            </div>
+        </nav>
+    </div>
+</header>
+
+    
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    
+
+    <footer id="footer_alt">
+        <br />
+        <br />
+        <br />
+        <div class="footer-copyright text-center bg-dark alert-success py-5">© 2019 Copyright:
+        <a href="#">BilgeN</a>
+        </div>
+    </footer>
+
+    </main>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    </form>
+</body>
+</html>

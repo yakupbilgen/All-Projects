@@ -1,0 +1,120 @@
+﻿<style>
+
+.container2 {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.container {
+    border: 2px solid #2f00ff;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+.kutu {
+    background-color: black;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: red;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.kutusag {
+    background-color: black;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: red;
+    border-radius: 6px;
+    border: 1px #007d7d solid;
+}
+
+.kutusol {
+    background-color: black;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: red;
+    border-radius: 6px;
+    border: 1px #007d7d solid;
+    border: 3px solid white;
+}
+
+.kutusol1 {
+    width: 180px;
+    height: auto;
+    margin: 1px;
+}
+
+
+.konu {
+    font-size: 18px;
+    display: block;
+    border: ridge 2px blue;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: blue;
+    color: black;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    font-size: 20px;
+}
+
+#btnKaydet {
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    color: black;
+}
+
+img.img {
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+}
+
+ul.header {
+    border-style: double;
+    text-align: right;
+    border: 1px;
+    margin: 1px;
+}
+
+ul#header_ul li {
+    float: left;
+    list-style: none;
+    margin: 1rem;
+    color: red;
+}
+
+input {
+    margin: 1rem;
+    float: right;
+    text-align: center;
+}
+
+ul.ulsol {
+    float: left;
+    text-align: left;
+}
+
+h3.h3yazilim {
+    text-align: left;
+}
+
+</style>
