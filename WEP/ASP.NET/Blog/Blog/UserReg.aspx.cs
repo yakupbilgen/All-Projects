@@ -18,7 +18,7 @@ namespace Blog
 		{
 			
 			Kullanici k1 = new Kullanici();
-			DateTime dt = new DateTime();
+			DateTime dt = DateTime.Now;
 
 			k1.KullaniciAdSoyad = txt_kAdi.Text;
 			k1.KullaniciParola = txt_kParola.Text;
@@ -26,8 +26,7 @@ namespace Blog
 			k1.KullaniciEposta = txt_kEposta.Text;
 			k1.KullaniciYetki = Convert.ToByte(txt_kYetki.Text);
 			k1.KullaniciFotoUrl = FileUpload1.FileName;
-			k1.KullaniciKayitTarih = dt.DayOfWeek;
-
+			k1.KullaniciKayitTarih = dt;
 
 
 			BlogEntities ctx = new BlogEntities();
@@ -35,7 +34,7 @@ namespace Blog
 
 			ctx.SaveChanges();
 
-			//Response.Redirect("UserReg.aspx");
+			Response.Redirect("UserReg.aspx");
 		}
 
 		protected void btnIptal_Click(object sender, EventArgs e)

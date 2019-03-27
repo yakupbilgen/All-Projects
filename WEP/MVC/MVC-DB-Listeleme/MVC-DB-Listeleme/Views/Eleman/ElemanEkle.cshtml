@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "ElemanEkle";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h2>Eleman Ekle</h2>
+<form method="post" action="~/Eleman/ElemanEkle">
+    <input type="text" name="txtElemanAd" placeholder="Eleman Adı" /> <br />
+    <input type="text" name="txtElemanSoyadd" placeholder="Eleman Soyad" /> <br />
+    <input type="text" name="txtElemanSehir" placeholder="Eleman Şehir" /> <br />
+    <button type="submit" id="btnElemanEkle">Kaydet</button>
+</form>
+
